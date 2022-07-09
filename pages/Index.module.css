@@ -1,0 +1,61 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 16px);
+  background-color: rgb(31, 33, 54);
+}
+
+.container {
+  max-width: 768px;
+}
+
+.dog-video {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 360px;
+}
+
+.btn-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  cursor: pointer;
+  width: 420px;
+  margin: 8px auto 0;
+}
+
+.btn-wrapper > button {
+  cursor: pointer;
+  border: 0;
+  transition: transform 0.2s;
+}
+
+.btn-wrapper > button:hover {
+  transform: scale(1.1);
+}
+
+.dog-btn {
+  padding: 12px 8px;
+  font-weight: bold;
+  background-color: rgba(230, 230, 230, 1);
+  border-radius: 8px;
+}
+
+.like-btn {
+  padding: 12px 8px;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(0, 90, 201);
+  border-radius: 8px;
+}
+
+.like-btn > svg {
+  width: 16px;
+  aspect-ratio: 1 /1;
+}
